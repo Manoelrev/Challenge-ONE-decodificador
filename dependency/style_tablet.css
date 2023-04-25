@@ -1,8 +1,10 @@
 
+
 main{   
     text-align: center;
     display:block;
-    width: 90%;
+    max-width: 100% ;
+    margin: 0;
 }
 
 .text_import{
@@ -14,6 +16,7 @@ main{
 .text_export{
     width: 100%;
     height: 20%;
+    margin: 0;
 }
 
 .text_export img{
@@ -29,4 +32,23 @@ footer div{
 }
 footer li{
     display: inline-block;
+}
+
+@media (width <= 480px){
+    header, main, footer{
+        margin: 1vh auto;
+    }
+    .title_h1{
+        margin: 0;
+    }
+    .text_import p{
+        font-size: 15px;
+    }
+    button{
+        width: 100%;
+    }
+    .text_export{
+        margin: 20% auto;
+    }
+
 }

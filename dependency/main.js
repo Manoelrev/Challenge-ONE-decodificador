@@ -8,12 +8,12 @@ function teste(){
         document.querySelector("#img").style.display = "none";}
 
     if(document.querySelector(".area_export").value != ""){
-        document.querySelector("#img").style.display = "none";
+        document.querySelector(".mensagem").style.display = "none";
         document.querySelector(".copiar").style.display = "block";
     }
     else{
         if(window.matchMedia("(orientation: landscape)").matches){
-        document.querySelector("#img").style.display = "block";}
+        document.querySelector(".mensagem").style.display = "block";}
         document.querySelector(".copiar").style.display = "none";
     }
 }

@@ -1,0 +1,70 @@
+header{
+    height: 15vh;
+}
+main{
+    height: 80vh;
+}
+.text_import, .text_export{
+    width: 100%;
+    position: relative;
+    left: 0;
+    display: block;
+}
+.text_import{
+    height: 80%;
+}
+.text_export{
+    height: 20%;
+}
+
+.text_import textarea, .text_export textarea{
+    width: 100%;
+    margin: 0;
+}
+.criptografar, .descriptografar{
+    padding: 30px 0;
+    width: 49%;
+    margin: 0;
+}
+.descriptografar{
+    min-height: auto;
+}
+footer p, .mensagem p, .text_alert p, .criptografar, .descriptografar{
+    font-size: 25px;
+}
+.mensagem strong, ::placeholder, textarea{
+    font-size: 25px;
+}
+
+.copiar{
+    padding: 10px 10px;
+}
+
+@media (width <= 480px)
+{
+    .img{
+        height: 100px;
+    }
+    header,main, footer{
+        width: 98%;
+        margin: 0;
+    }
+    .text_import textarea, .text_export textarea{
+        width: 98%;
+    }
+    .criptografar, .descriptografar{
+        width: 98%;
+        padding: 10px;
+        margin: 3px 0;
+    }
+
+    .text_alert span{
+        padding: 1px 6px;
+    }
+    footer p, .mensagem p, .text_alert p, .criptografar, .descriptografar{
+        font-size: 15px;
+    }
+    .mensagem strong, ::placeholder, textarea{
+        font-size: 20px;
+    }
+}

@@ -3,13 +3,16 @@
     <head>
         <title>Decodificador Alura</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
         <link rel="stylesheet" href="dependency/reset.css">
         <link rel="stylesheet" href="dependency/style.css">
-        <link rel="stylesheet" media="screen and (orientation:portrait)" href="dependency/style_tablet.css">
+        <link rel="stylesheet" media="screen and (orientation:portrait)" href="dependency/style_mobile.css">
+       
         <link rel="icon" href="dependency/image/logo.png">
     <body>
         <header>
-            <h1 class="title_h1">a</h1>
+            <div class=".title_h1"><h1><img class="img" src="dependency/image/logo.png" alt="Decodificador Alura"></h1></div>
         </header>
 
         <main>
@@ -20,7 +23,11 @@
                 <button class="descriptografar" type="button">Descriptografar</button>
             </div>
                 <div class="text_export">
-                    <img id="img" src="dependency/image/nenhuma_mensagem_encontrada.png">
+                    <div class="mensagem">
+                        <img id="img" src="dependency/image/nenhuma_mensagem_encontrada.png">
+                        <p><strong>Nenhuma mensagem encontrada</strong></p>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div>
                     <textarea class="area_export" disabled="disabled"></textarea>
                     <button class="copiar" type="button">Copiar</button>
                 </div>

@@ -69,6 +69,7 @@ main .criptografar{
 
 textarea{
     font-family: 'Lato', sans-serif;
+    background-color: transparent;
     border: transparent;
     color: #0A3871;
     font-size: 2vw;
@@ -76,7 +77,6 @@ textarea{
     width: 100%;
 }
 .text_import textarea{
-    background-color: transparent;
     width: 90%;
     height: 80%;
     margin: 0 10vh 0 0;

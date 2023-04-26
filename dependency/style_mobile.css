@@ -30,10 +30,14 @@ main{
     min-height: auto;
 }
 footer p, .mensagem p, .text_alert p, .criptografar, .descriptografar{
-    font-size: 25px;
+    font-size: 2vw;
 }
 .mensagem strong, ::placeholder, textarea{
-    font-size: 25px;
+    font-size: 3vw;
+}
+
+.text_alert span{
+    padding: 1px 6px;
 }
 
 .copiar{
@@ -63,13 +67,11 @@ footer p, .mensagem p, .text_alert p, .criptografar, .descriptografar{
         margin: 3px 0;
     }
 
-    .text_alert span{
-        padding: 1px 6px;
-    }
+
     footer p, .mensagem p, .text_alert p, .criptografar, .descriptografar{
-        font-size: 15px;
+        font-size: 4vw;
     }
     .mensagem strong, ::placeholder, textarea{
-        font-size: 20px;
+        font-size: 4vw;
     }
 }

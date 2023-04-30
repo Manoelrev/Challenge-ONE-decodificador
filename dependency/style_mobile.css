@@ -10,6 +10,7 @@ main{
 }
 .text_import, .text_export{
     width: 100%;
+    margin: 10%;
     position: relative;
     left: 0;
     display: block;

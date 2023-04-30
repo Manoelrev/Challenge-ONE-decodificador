@@ -67,7 +67,7 @@ footer p, .mensagem p, .text_alert p, .criptografar{
         margin: 20% 0;
     }
     .text_import, .text_export{
-        margin: 10% 0;
+        margin: 20% 0;
     }
     .text_import textarea {
         width: 98%;

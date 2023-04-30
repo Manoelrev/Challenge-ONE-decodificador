@@ -1,7 +1,38 @@
-var criptografia = document.querySelector(".criptografar");
-var descriptografia = document.querySelector(".descriptografar");
 var copiar = document.querySelector(".copiar");
 var copyText = document.querySelector(".area_export");
+var opcao = "0";
+
+
+function myFunction(x){
+    opcao = x;
+}
+
+function decisao(){
+    switch (opcao) {
+        case "0":
+            var text_criptografia = document.querySelector(".area_input").value;
+            var a = text_criptografia.replace(/e/gi, "enter");
+            var b = a.replace(/i/gi, "imes");
+            var c = b.replace(/a/gi, "ai");
+            var d = c.replace(/o/gi, "ober");
+            var e = d.replace(/u/gi, "ufat");
+            
+            document.querySelector(".area_export").value = e;
+            break;
+
+        case "1":
+            var text_criptografia = document.querySelector(".area_input").value;
+            var a = text_criptografia.replace(/enter/gi,"e");
+            var b = a.replace(/imes/gi,"i");
+            var c = b.replace(/ai/gi,"a");
+            var d = c.replace(/ober/gi,"o");
+            var e = d.replace(/ufat/gi,"u");
+            
+            document.querySelector(".area_export").value = e;
+            break;
+    }
+}
+
 
 function teste(){
     if(window.matchMedia("(orientation: portrait)").matches){
@@ -19,28 +50,8 @@ function teste(){
 }
 
 setInterval(teste,41);
+setInterval(decisao,41);
 
-criptografia.onclick = function (){
-    var text_criptografia = document.querySelector(".area_input").value;
-    let a = text_criptografia.replace(/e/gi, "enter");
-    let b = a.replace(/i/gi, "imes");
-    let c = b.replace(/a/gi, "ai");
-    let d = c.replace(/o/gi, "ober");
-    let e = d.replace(/u/gi, "ufat");
-    
-    document.querySelector(".area_export").value = e;
-}
-
-descriptografia.onclick = function (){
-    var text_criptografia = document.querySelector(".area_input").value;
-    let a = text_criptografia.replace(/enter/gi,"e");
-    let b = a.replace(/imes/gi,"i");
-    let c = b.replace(/ai/gi,"a");
-    let d = c.replace(/ober/gi,"o");
-    let e = d.replace(/ufat/gi,"u");
-    
-    document.querySelector(".area_export").value = e;
-}
 
 copiar.onclick = function ()
 {

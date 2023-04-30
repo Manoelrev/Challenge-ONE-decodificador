@@ -18,10 +18,18 @@
         <main>
             <div class="text_import">
                 <textarea class="area_input" placeholder="Digite seu texto"></textarea>
-                <div class="text_alert"><P>  <span>!</span> Digite apenas letras minusculas e sem acento.</P>
-                <button class="criptografar" type="button">Criptografar</button>
-                <button class="descriptografar" type="button">Descriptografar</button>
-            </div>
+                <P class="text_alert"><span>!</span> Digite apenas letras minusculas e sem acento.</P>
+                
+                <div class="label">
+                <label>
+                    <input type="radio" checked="checked" name="opcao" class="opcao" onclick="myFunction(this.value)" value="0">
+                    <p id="criptografar" class="criptografar">criptografar</p></label>
+                </div>
+                <div class="label">
+                <label>
+                    <input type="radio" name="opcao" class="opcao" onclick="myFunction(this.value)" value="1">
+                    <p id="descriptografia" class="criptografar">descriptografar</p>  </label>
+                </div>
             </div>
                 <div class="text_export">
                     <div class="mensagem">
